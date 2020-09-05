@@ -3,24 +3,24 @@
 
 <head>
 
-  
+
   <link href="/css/misestilos.css" rel="stylesheet" type="text/css">
 
 
 
-  
+
   <!-- widget inicio -->
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="js/core/jquery.3.2.1.min.js"></script>
   <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
- 
- <!-- Ocullta el mensaje loadin que envia  jquery.mobile-1.5.0-alpha.1.min.js -->
- <script>
-  // As submitted by @Aras
-$.mobile.loading( "hide" );
-// (or presumably as submitted by @Pnct)
-$.mobile.loading().hide();
-</script>
+
+  <!-- Ocullta el mensaje loadin que envia  jquery.mobile-1.5.0-alpha.1.min.js -->
+  <script>
+    // As submitted by @Aras
+    $.mobile.loading("hide");
+    // (or presumably as submitted by @Pnct)
+    $.mobile.loading().hide();
+  </script>
   <!-- widget inicio -->
 
 
@@ -77,876 +77,1113 @@ electrónico, parentesco (cuando aplique).-->
 
 
 
-    
-  </head>
-  <body id="top" onload="setupZoom ()" >
-    <header>
-      <div class="profile-page sidebar-collapse">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-          <div class="container">
-            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Creative CV</a>
-              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+
+</head>
+
+<body id="top" onload="setupZoom ()">
+  <header>
+    <div class="profile-page sidebar-collapse">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+        <div class="container">
+          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">CV</a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
+                class="navbar-toggler-bar bar3"></span></button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">Sobre mi</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#proyectos">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="page-content">
+    <div>
+      <div class="profile-page">
+        <div class="wrapper">
+          <div class="page-header page-header-small" filter-color="green">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');">
             </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-              </ul>
+            <div class="container">
+              <div class="content-center">
+                <div class="cc-profile-image"><a href="#"><img src="images/anthony.jpg" alt="Image" /></a></div>
+                <div class="h2 title">Eliezer Valle</div>
+                <p class="category text-white">Web Developer, Graphic Designer, Photographer</p><a
+                  class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
+                  data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in"
+                  data-aos-anchor="data-aos-anchor">Download CV</a>
+              </div>
+            </div>
+            <div class="section">
+              <div class="container">
+                <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="#"
+                    rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a
+                    class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
+                    title="Follow me on Twitter"><i class="fa fa-twitter"></i></a></a><a
+                    class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
+                    title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
-    </header>
-    <div class="page-content">
-      <div>
-<div class="profile-page">
-  <div class="wrapper">
-    <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');"></div>
-      <div class="container">
-        <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="images/anthony.jpg" alt="Image"/></a></div>
-          <div class="h2 title">Anthony Barnett</div>
-          <p class="category text-white">Web Developer, Graphic Designer,  Photographer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+      <div class="section" id="about">
+        <div class="container">
+          <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title">Sobre mí</div>
+                  <p>Soy una persona que le encanta estar aprendiendo continuamente, tengo conocimientos en Desarrollo
+                    de software como en Diseño gráfico, me apasiona la programación y el diseño gráfico, me gusta el
+                    basketball y entreno karate-do y boxeo desde los 12 años. 
+                  </p>
+                  <p>Actualmente trabajo como Analyst Developer en la Universidad del Valle de Guatemala donde llevo 10
+                    años trabajando, la Universidad me ha ayudado en mi desarrollo personal como profesional donde he
+                    podido ir creciendo y ascendiendo hasta el puesto que actualmente desempeño.<a
+                      href="https://templateflip.com/templates/creative-cv/" target="_blank">Learn More</a></p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title">Información Basica</div>
+                  <div class="row">
+                    <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+                    <div class="col-sm-8">31</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                    <div class="col-sm-8">emendezv@miumg.edu.gt</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                    <div class="col-sm-8">+(502) 5195-2598</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+                    <div class="col-sm-8">1Ave. Lote 61 Zona 21</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+                    <div class="col-sm-8">English, Español</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="section" id="proyectos">
+        <div class="h4 text-center mb-4 title ">Proyectos Realizados</div>
+        <div class="container">
+          <div class="card" data-aos="fade-up" data-aos-offset="10">
+
+     
+            <div class="row">
+              <div class="col-lg-12">
+              <div data-role="tabs">
+                <div data-role="tabs">
+                  <ul>
+                    <li><a href="#fragment-1" class="ui-btn-active">Páginas Web Ariva GT</a></li>
+                    <li><a href="#fragment-2">UVG - (Actual)</a></li>
+                    <li><a href="#fragment-3">Página Web LauiSolutions</a></li>
+                    <li><a href="#fragment-4">Página Web Maseco GT</a></li>
+                    <li><a href="#fragment-5">My teddy preschool</a></li>
+                  </ul>
+                </div>
+                <div id="fragment-1">
+                  <p>Página web realizada con Bootstrap, HTML, CSS y PHP para Ariva GT empresa que presta los siguiente
+                    servicios </p>
+                  <ul>
+                    <li>Poligrafía</li>
+                    <li>Pruebas Psicométricas</li>
+                    <li>Estudios socioeconómicos</li>
+                    <li>Asesorìas en casos de alto impacto</li>
+                    <li>Reclutamiento y Selección</li>
+                  </ul>
+                  <p>Se realiza integracion de Login de plantaforma de seguimiento de la empresa y se prestan serviciso
+                    de mantenimiento y creación de nuevos modulos a su plataforma</p>
+                  <ul>
+                    <li>URL de la página: <a href="https://arivapoligrafia.com" target="_blank">arivapoligrafia.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="fragment-2">
+                  <p>Nuevas implementaciones, solicitudes de cambio, requerimientos y solucion de errores dentro de los sistemas
+                    de la Universidad del Valle de guatemala</p>
+                    <ul>
+                      <li>Portal de admisiones UVG: <a href="https://admisiones.uvg.edu.gt/#/auth/login" target="_blank">admisiones.uvg.edu.gt</a></li>
+                      <li>Portal de Estudiantes UVG: <a href="https://portal.uvg.edu.gt/" target="_blank">portal.uvg.edu.gt</a></li>
+                      <li>Control de cursos Canvas UVG: <a href="https://canvas.uvg.edu.gt/login/canvas" target="_blank">canvas.uvg.edu.gt</a></li>
+                      <li>Sistemas internos de la Universidad:</li>
+                      <ul>
+                        <li>Sistema de Administración de Recursos(salones, edificios)</li>
+                        <li>Sistema de Registro</li>
+                        <li>Sistema de Gafetes</li>
+                        <li>Sistema de RRHH</li>
+                        <li>Sistema financiero</li>
+                        <li>Sistema intranet</li>
+                        <li>Dynamics GP</li>
+                        <li>Sistema de presupuestos</li>
+                        <li>otros..</li>
+
+
+                      </ul>
+                    </ul>
+                </div>
+                <div id="fragment-3">
+                  <p>Página web realizada con WordPress, HTML, CSS y PHP para LauiSolutions empresa que presta los siguiente
+                    servicios </p>
+
+                    <ul>
+                      <li>OUTSOURCING HELP DESK</li>
+                      <li>SOPORTE Y MANTENIMIENTO DE HARDWARE</li>
+                      <li>CABLEADO ESTRUCTURADO</li>
+                      <li>APLICACIONES OPEN SOURCE</li>
+                    </ul>
+                    <ul>
+                      <li>URL de la página: <a href="https://lauisolutions.com/" target="_blank">lauisolutions.com</a>
+                      </li>
+
+                </div>
+                <div id="fragment-4">
+                  <p>Página web realizada con bootstrap, HTML, CSS y PHP para Maseco Guatemala empresa que presta los siguiente
+                    servicios </p>
+
+                    <ul>
+                      <li>Construcción</li>
+                      <li>Remodelación</li>
+                      <li>Planificación de proyectos</li>
+                      <li>Metal Mecánica</li>
+                      <li>Servicio tecnico de Aires Acondicionados</li>
+                    </ul>
+                    <ul>
+                      <li>URL de la página: <a href="https://lauisolutions.com/" target="_blank">lauisolutions.com</a>
+                      </li>
+
+                </div>
+
+                <div id="fragment-5">
+                  <p>Realizando página web y sistema de gestion de tareas para la institucion My Teddy Preschool , Sistema con las siguientes caracteristicas a destacar </p>
+
+                    <ul>
+                      <li>Control de tareas</li>
+                      <li>Conrol de Asistencia</li>
+                      <li>Control de profesores</li>
+                    </ul>
+                    <ul>
+                      <li>URL de la página: <a href="https://www.myteddypreschool.com/" target="_blank">myteddypreschool.com/</a>
+                      </li>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     
+
+
+     <div class="section" id="contact">
+      <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
+        <div class="container">
+          <div class="cc-contact">
+            <div class="row">
+              <div class="col-md-9">
+                <div class="card mb-0" data-aos="zoom-in">
+                  <div class="h4 text-center title">Contact Me</div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <form action="https://formspree.io/your@email.com" method="POST">
+                          <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <div class="input-group"><span class="input-group-addon"><i
+                                    class="fa fa-user-circle"></i></span>
+                                <input class="form-control" type="text" name="name" placeholder="Name"
+                                  required="required" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <div class="input-group"><span class="input-group-addon"><i
+                                    class="fa fa-file-text"></i></span>
+                                <input class="form-control" type="text" name="Subject" placeholder="Subject"
+                                  required="required" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <div class="input-group"><span class="input-group-addon"><i
+                                    class="fa fa-envelope"></i></span>
+                                <input class="form-control" type="email" name="_replyto" placeholder="E-mail"
+                                  required="required" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <div class="form-group">
+                                <textarea class="form-control" name="message" placeholder="Your Message"
+                                  required="required"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <button class="btn btn-primary" type="submit">Send</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <p class="mb-0"><strong>Address </strong></p>
+                        <p class="pb-2">140, City Center, New York, U.S.A</p>
+                        <p class="mb-0"><strong>Phone</strong></p>
+                        <p class="pb-2">+1718-111-0011</p>
+                        <p class="mb-0"><strong>Email</strong></p>
+                        <p>anthony@company.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="section" id="skill">
+        <div class="container ">
+          <div class="h4 text-center mb-4 title ">Professional Skills</div>
+          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+              <h3 style="text-align:center;"><b id="client-prev"></b> <b id="client-next"> - </b></h3>
+              <div class="row">
+
+                
+
+            
+                <ul class="row client-slider " id="clint-slider">
+                  <li>
+                    <a href="images\imgmaseco\msc (1).jpg"><img src="images\imgmaseco\msc (1).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (2).jpg"><img src="images\imgmaseco\msc (2).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (3).jpg"><img src="images\imgmaseco\msc (3).jpg"></a>">
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (4).jpg"><img src="images\imgmaseco\msc (4).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (5).jpg"><img src="images\imgmaseco\msc (5).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (6).jpg"><img src="images\imgmaseco\msc (6).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (7).jpg"><img src="images\imgmaseco\msc (7).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (8).jpg"><img src="images\imgmaseco\msc (8).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (9).jpg"><img src="images\imgmaseco\msc (9).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (10).jpg"><img src="images\imgmaseco\msc (10).jpg"></a>
+    
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (11).jpg"><img src="images\imgmaseco\msc (11).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (12).jpg"><img src="images\imgmaseco\msc (12).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (13).jpg"><img src="images\imgmaseco\msc (13).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (14).jpg"><img src="images\imgmaseco\msc (14).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (15).jpg"><img src="images\imgmaseco\msc (15).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (16).jpg"><img src="images\imgmaseco\msc (16).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (17).jpg"><img src="images\imgmaseco\msc (17).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (18).jpg"><img src="images\imgmaseco\msc (18).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (19).jpg"><img src="images\imgmaseco\msc (19).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (20).jpg"><img src="images\imgmaseco\msc (20).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (21).jpg"><img src="images\imgmaseco\msc (21).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (22).jpg"><img src="images\imgmaseco\msc (22).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (23).jpg"><img src="images\imgmaseco\msc (23).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (24).jpg"><img src="images\imgmaseco\msc (24).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (25).jpg"><img src="images\imgmaseco\msc (25).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (26).jpg"><img src="images\imgmaseco\msc (26).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (27).jpg"><img src="images\imgmaseco\msc (27).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (28).jpg"><img src="images\imgmaseco\msc (28).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (29).jpg"><img src="images\imgmaseco\msc (29).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (30).jpg"><img src="images\imgmaseco\msc (30).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (31).jpg"><img src="images\imgmaseco\msc (31).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (32).jpg"><img src="images\imgmaseco\msc (32).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (33).jpg"><img src="images\imgmaseco\msc (33).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (34).jpg"><img src="images\imgmaseco\msc (34).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (35).jpg"><img src="images\imgmaseco\msc (35).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (36).jpg"><img src="images\imgmaseco\msc (36).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (38).jpg"><img src="images\imgmaseco\msc (38).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (39).jpg"><img src="images\imgmaseco\msc (39).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (40).jpg"><img src="images\imgmaseco\msc (40).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (41).jpg"><img src="images\imgmaseco\msc (41).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (42).jpg"><img src="images\imgmaseco\msc (42).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (43).jpg"><img src="images\imgmaseco\msc (43).jpg"></a>
+                  </li>
+                  <li>
+                    <a href="images\imgmaseco\msc (44).jpg"><img src="images\imgmaseco\msc (44).jpg"></a>
+                  </li>
+                </ul>
+                <div class="col-md-6">
+
+
+                  <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Visual Basic. NET</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">PHP</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">TypeScript</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">AngularJS</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">React. JS</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Node JS</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Adobe Photoshop</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Adobe Illustrator</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <table id="example" class="table table-striped table-bordered" data-page-length='5' style="width:100%">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo electrónico</th>
+                    <th>Parentesco</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                  </tr>
+                  <tr>
+                    <td>Garrett Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>63</td>
+                  </tr>
+                  <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>66</td>
+                  </tr>
+                  <tr>
+                    <td>Cedric Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>33</td>
+                  </tr>
+                  <tr>
+                    <td>Brielle Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>61</td>
+                  </tr>
+                  <tr>
+                    <td>Herrod Chandler</td>
+                    <td>Sales Assistant</td>
+                    <td>San Francisco</td>
+                    <td>59</td>
+                  </tr>
+                  <tr>
+                    <td>Rhona Davidson</td>
+                    <td>Integration Specialist</td>
+                    <td>Tokyo</td>
+                    <td>55</td>
+                  </tr>
+                  <tr>
+                    <td>Colleen Hurst</td>
+                    <td>Javascript Developer</td>
+                    <td>San Francisco</td>
+                    <td>39</td>
+                  </tr>
+                  <tr>
+                    <td>Sonya Frost</td>
+                    <td>Software Engineer</td>
+                    <td>Edinburgh</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>Jena Gaines</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>Quinn Flynn</td>
+                    <td>Support Lead</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>Charde Marshall</td>
+                    <td>Regional Director</td>
+                    <td>San Francisco</td>
+                    <td>36</td>
+                  </tr>
+                  <tr>
+                    <td>Haley Kennedy</td>
+                    <td>Senior Marketing Designer</td>
+                    <td>London</td>
+                    <td>43</td>
+                  </tr>
+                  <tr>
+                    <td>Tatyana Fitzpatrick</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <td>Michael Silva</td>
+                    <td>Marketing Designer</td>
+                    <td>London</td>
+                    <td>66</td>
+
+                  <tr>
+                    <td>Paul Byrd</td>
+                    <td>Chief Financial Officer (CFO)</td>
+                    <td>New York</td>
+                    <td>64</td>
+                  </tr>
+                  <tr>
+                    <td>Gloria Little</td>
+                    <td>Systems Administrator</td>
+                    <td>New York</td>
+                    <td>59</td>
+                  </tr>
+                  <tr>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>27</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                  </tr>
+                </tfoot>
+              </table>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="section" id="experience">
+          <div class="container cc-experience">
+            <div class="h4 text-center mb-4 title">Work Experience</div>
+
+            <div class="container">
+              <div class=" title">
+                <h1>NUESTRO TRABAJO</h1>
+                <p>Nuestra mayor prioridad es tu satisfacción y desarrollo.</p>
+              </div>
+
+            </div>
+
+             
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <p>March 2016 - Present</p>
+                    <div class="h5">CreativeM</div>
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Front End Developer</div>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                      tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
+                      eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
+                      eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
+                      pretium molestie ultricies sollicitudin dui.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <p>April 2014 - March 2016</p>
+                    <div class="h5">WebNote</div>
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Web Developer</div>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                      tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
+                      eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
+                      eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
+                      pretium molestie ultricies sollicitudin dui.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <p>April 2013 - February 2014</p>
+                    <div class="h5">WEBM</div>
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Intern</div>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                      tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
+                      eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
+                      eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
+                      pretium molestie ultricies sollicitudin dui.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="container cc-education">
+            <div class="h4 text-center mb-4 title">Education</div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-education-header">
+                    <p>2013 - 2015</p>
+                    <div class="h5">Master's Degree</div>
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Master of Information Technology</div>
+                    <p class="category">University of Computer Science</p>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                      tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
+                      eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
+                      eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
+                      pretium molestie ultricies sollicitudin dui.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-education-header">
+                    <p>2009 - 2013</p>
+                    <div class="h5">Bachelor's Degree</div>
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Bachelor of Computer Science</div>
+                    <p class="category">University of Computer Science</p>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                      tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
+                      eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
+                      eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
+                      pretium molestie ultricies sollicitudin dui.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-education-header">
+                    <p>2007 - 2009</p>
+                    <div class="h5">High School</div>
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Science and Mathematics</div>
+                    <p class="category">School of Secondary board</p>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                      tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
+                      eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
+                      eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
+                      pretium molestie ultricies sollicitudin dui.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="reference">
+          <div class="container cc-reference">
+            <div class="h4 mb-4 text-center title">References</div>
+            <div class="card" data-aos="zoom-in">
+              <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+                  <li data-target="#cc-Indicators" data-slide-to="1"></li>
+                  <li data-target="#cc-Indicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg"
+                          alt="Image" />
+                        <div class="h5 pt-2">Aiyana</div>
+                        <p class="category">CEO / WEBM</p>
+                      </div>
+                      <div class="col-lg-10 col-md-9">
+                        <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
+                          porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque
+                          etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam
+                          ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis
+                          parturient fringilla rhoncus eleifend.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg"
+                          alt="Image" />
+                        <div class="h5 pt-2">Braiden</div>
+                        <p class="category">CEO / Creativem</p>
+                      </div>
+                      <div class="col-lg-10 col-md-9">
+                        <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
+                          porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque
+                          etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam
+                          ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis
+                          parturient fringilla rhoncus eleifend.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg"
+                          alt="Image" />
+                        <div class="h5 pt-2">Alexander</div>
+                        <p class="category">CEO / Webnote</p>
+                      </div>
+                      <div class="col-lg-10 col-md-9">
+                        <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
+                          porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque
+                          etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam
+                          ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis
+                          parturient fringilla rhoncus eleifend.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="experience">
+        <div class="container cc-experience">
+          <div class="h4 text-center mb-4 title">Work Experience</div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>March 2016 - Present</p>
+                  <div class="h5">CreativeM</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Front End Developer</div>
+                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
+                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
+                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
+                    molestie ultricies sollicitudin dui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>April 2014 - March 2016</p>
+                  <div class="h5">WebNote</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Web Developer</div>
+                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
+                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
+                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
+                    molestie ultricies sollicitudin dui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>April 2013 - February 2014</p>
+                  <div class="h5">WEBM</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Intern</div>
+                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
+                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
+                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
+                    molestie ultricies sollicitudin dui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="section">
-        <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="about">
-  <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">About</div>
-            <p>Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.</p>
-            <p>Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience. <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Learn More</a></p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
+        <div class="container cc-education">
+          <div class="h4 text-center mb-4 title">Education</div>
+          <div class="card">
             <div class="row">
-              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">24</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">anthony@company.com</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-              <div class="col-sm-8">+1718-111-0011</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-              <div class="col-sm-8">140, City Center, New York, U.S.A</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-              <div class="col-sm-8">English, German, French</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="skill">
-  <div class="container">
-    <div class="h4 text-center mb-4 title">Professional Skills</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-12">
-            <div data-role="tabs">
-              <div data-role="tabs">
-                <ul>
-                  <li><a href="#fragment-1" class="ui-btn-active">One</a></li>
-                  <li><a href="#fragment-2">Two</a></li>
-                  <li><a href="#fragment-3">Three</a></li>
-                </ul>
-              </div>
-              <div id="fragment-1">
-                <p>This is the content of the tab 'One', with the id fragment-1.</p>
-              </div>
-              <div id="fragment-2">
-                <p>This is the content of the tab 'Two', with the id fragment-2.</p>
-              </div>
-              <div id="fragment-3">
-                <p>This is the content of thentent of thentent of thentent of thentent of thentent of thentent of
-                  thentent of thentent of thentent of thentent of thentent of thentent of thentent of the tab
-                  'Three', with the id fragment-3.</p>
-              </div>
-            </div>
-
-            <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">SASS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Photoshop</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <table id="example" class="table table-striped table-bordered" data-page-length='5' style="width:100%">
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Teléfono</th>
-              <th>Correo electrónico</th>
-              <th>Parentesco</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-            </tr>
-            <tr>
-              <td>Garrett Winters</td>
-              <td>Accountant</td>
-              <td>Tokyo</td>
-              <td>63</td>
-            </tr>
-            <tr>
-              <td>Ashton Cox</td>
-              <td>Junior Technical Author</td>
-              <td>San Francisco</td>
-              <td>66</td>
-            </tr>
-            <tr>
-              <td>Cedric Kelly</td>
-              <td>Senior Javascript Developer</td>
-              <td>Edinburgh</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td>Airi Satou</td>
-              <td>Accountant</td>
-              <td>Tokyo</td>
-              <td>33</td>
-            </tr>
-            <tr>
-              <td>Brielle Williamson</td>
-              <td>Integration Specialist</td>
-              <td>New York</td>
-              <td>61</td>
-            </tr>
-            <tr>
-              <td>Herrod Chandler</td>
-              <td>Sales Assistant</td>
-              <td>San Francisco</td>
-              <td>59</td>
-            </tr>
-            <tr>
-              <td>Rhona Davidson</td>
-              <td>Integration Specialist</td>
-              <td>Tokyo</td>
-              <td>55</td>
-            </tr>
-            <tr>
-              <td>Colleen Hurst</td>
-              <td>Javascript Developer</td>
-              <td>San Francisco</td>
-              <td>39</td>
-            </tr>
-            <tr>
-              <td>Sonya Frost</td>
-              <td>Software Engineer</td>
-              <td>Edinburgh</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Jena Gaines</td>
-              <td>Office Manager</td>
-              <td>London</td>
-              <td>30</td>
-            </tr>
-            <tr>
-              <td>Quinn Flynn</td>
-              <td>Support Lead</td>
-              <td>Edinburgh</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td>Charde Marshall</td>
-              <td>Regional Director</td>
-              <td>San Francisco</td>
-              <td>36</td>
-            </tr>
-            <tr>
-              <td>Haley Kennedy</td>
-              <td>Senior Marketing Designer</td>
-              <td>London</td>
-              <td>43</td>
-            </tr>
-            <tr>
-              <td>Tatyana Fitzpatrick</td>
-              <td>Regional Director</td>
-              <td>London</td>
-              <td>19</td>
-            </tr>
-            <tr>
-              <td>Michael Silva</td>
-              <td>Marketing Designer</td>
-              <td>London</td>
-              <td>66</td>
-
-            <tr>
-              <td>Paul Byrd</td>
-              <td>Chief Financial Officer (CFO)</td>
-              <td>New York</td>
-              <td>64</td>
-            </tr>
-            <tr>
-              <td>Gloria Little</td>
-              <td>Systems Administrator</td>
-              <td>New York</td>
-              <td>59</td>
-            </tr>
-            <tr>
-              <td>Donna Snider</td>
-              <td>Customer Support</td>
-              <td>New York</td>
-              <td>27</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-            </tr>
-          </tfoot>
-        </table>
-
-      </div>
-
-    </div>
-  </div>
-  <div class="section" id="experience">
-    <div class="container cc-experience">
-      <div class="h4 text-center mb-4 title">Work Experience</div>
-
-      <div class="container">
-        <div class=" title">
-          <h1>NUESTRO TRABAJO</h1>
-          <p>Nuestra mayor prioridad es tu satisfacción y desarrollo.</p>
-        </div>
-   
-
-      
-         <h3 style="text-align:center;" ><b  id="client-prev" ></b> <b id="client-next">  -  </b></h3>
-       
-      </div>
-      <ul class="row client-slider " id="clint-slider">
-        <li>
-          <a href="images\imgmaseco\msc (1).jpg"><img src="images\imgmaseco\msc (1).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (2).jpg"><img src="images\imgmaseco\msc (2).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (3).jpg"><img src="images\imgmaseco\msc (3).jpg"></a>">
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (4).jpg"><img src="images\imgmaseco\msc (4).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (5).jpg"><img src="images\imgmaseco\msc (5).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (6).jpg"><img src="images\imgmaseco\msc (6).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (7).jpg"><img src="images\imgmaseco\msc (7).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (8).jpg"><img src="images\imgmaseco\msc (8).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (9).jpg"><img src="images\imgmaseco\msc (9).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (10).jpg"><img src="images\imgmaseco\msc (10).jpg"></a>
-
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (11).jpg"><img src="images\imgmaseco\msc (11).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (12).jpg"><img src="images\imgmaseco\msc (12).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (13).jpg"><img src="images\imgmaseco\msc (13).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (14).jpg"><img src="images\imgmaseco\msc (14).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (15).jpg"><img src="images\imgmaseco\msc (15).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (16).jpg"><img src="images\imgmaseco\msc (16).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (17).jpg"><img src="images\imgmaseco\msc (17).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (18).jpg"><img src="images\imgmaseco\msc (18).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (19).jpg"><img src="images\imgmaseco\msc (19).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (20).jpg"><img src="images\imgmaseco\msc (20).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (21).jpg"><img src="images\imgmaseco\msc (21).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (22).jpg"><img src="images\imgmaseco\msc (22).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (23).jpg"><img src="images\imgmaseco\msc (23).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (24).jpg"><img src="images\imgmaseco\msc (24).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (25).jpg"><img src="images\imgmaseco\msc (25).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (26).jpg"><img src="images\imgmaseco\msc (26).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (27).jpg"><img src="images\imgmaseco\msc (27).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (28).jpg"><img src="images\imgmaseco\msc (28).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (29).jpg"><img src="images\imgmaseco\msc (29).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (30).jpg"><img src="images\imgmaseco\msc (30).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (31).jpg"><img src="images\imgmaseco\msc (31).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (32).jpg"><img src="images\imgmaseco\msc (32).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (33).jpg"><img src="images\imgmaseco\msc (33).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (34).jpg"><img src="images\imgmaseco\msc (34).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (35).jpg"><img src="images\imgmaseco\msc (35).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (36).jpg"><img src="images\imgmaseco\msc (36).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (38).jpg"><img src="images\imgmaseco\msc (38).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (39).jpg"><img src="images\imgmaseco\msc (39).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (40).jpg"><img src="images\imgmaseco\msc (40).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (41).jpg"><img src="images\imgmaseco\msc (41).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (42).jpg"><img src="images\imgmaseco\msc (42).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (43).jpg"><img src="images\imgmaseco\msc (43).jpg"></a>
-        </li>
-        <li>
-          <a href="images\imgmaseco\msc (44).jpg"><img src="images\imgmaseco\msc (44).jpg"></a>
-        </li>
-      </ul>
-      <div class="card">
-        <div class="row">
-          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body cc-experience-header">
-              <p>March 2016 - Present</p>
-              <div class="h5">CreativeM</div>
-            </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body">
-              <div class="h5">Front End Developer</div>
-              <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
-                eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
-                eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
-                pretium molestie ultricies sollicitudin dui.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="row">
-          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body cc-experience-header">
-              <p>April 2014 - March 2016</p>
-              <div class="h5">WebNote</div>
-            </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body">
-              <div class="h5">Web Developer</div>
-              <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
-                eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
-                eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
-                pretium molestie ultricies sollicitudin dui.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="row">
-          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body cc-experience-header">
-              <p>April 2013 - February 2014</p>
-              <div class="h5">WEBM</div>
-            </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body">
-              <div class="h5">Intern</div>
-              <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
-                eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
-                eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
-                pretium molestie ultricies sollicitudin dui.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container cc-education">
-      <div class="h4 text-center mb-4 title">Education</div>
-      <div class="card">
-        <div class="row">
-          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body cc-education-header">
-              <p>2013 - 2015</p>
-              <div class="h5">Master's Degree</div>
-            </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body">
-              <div class="h5">Master of Information Technology</div>
-              <p class="category">University of Computer Science</p>
-              <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
-                eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
-                eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
-                pretium molestie ultricies sollicitudin dui.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="row">
-          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body cc-education-header">
-              <p>2009 - 2013</p>
-              <div class="h5">Bachelor's Degree</div>
-            </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body">
-              <div class="h5">Bachelor of Computer Science</div>
-              <p class="category">University of Computer Science</p>
-              <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
-                eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
-                eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
-                pretium molestie ultricies sollicitudin dui.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="row">
-          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body cc-education-header">
-              <p>2007 - 2009</p>
-              <div class="h5">High School</div>
-            </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body">
-              <div class="h5">Science and Mathematics</div>
-              <p class="category">School of Secondary board</p>
-              <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel
-                eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque
-                eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam
-                pretium molestie ultricies sollicitudin dui.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section" id="reference">
-    <div class="container cc-reference">
-      <div class="h4 mb-4 text-center title">References</div>
-      <div class="card" data-aos="zoom-in">
-        <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-            <li data-target="#cc-Indicators" data-slide-to="1"></li>
-            <li data-target="#cc-Indicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg"
-                    alt="Image" />
-                  <div class="h5 pt-2">Aiyana</div>
-                  <p class="category">CEO / WEBM</p>
-                </div>
-                <div class="col-lg-10 col-md-9">
-                  <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
-                    porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque
-                    etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam
-                    ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis
-                    parturient fringilla rhoncus eleifend.</p>
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
+                  <p>2013 - 2015</p>
+                  <div class="h5">Master's Degree</div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg"
-                    alt="Image" />
-                  <div class="h5 pt-2">Braiden</div>
-                  <p class="category">CEO / Creativem</p>
-                </div>
-                <div class="col-lg-10 col-md-9">
-                  <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
-                    porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque
-                    etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam
-                    ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis
-                    parturient fringilla rhoncus eleifend.</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg"
-                    alt="Image" />
-                  <div class="h5 pt-2">Alexander</div>
-                  <p class="category">CEO / Webnote</p>
-                </div>
-                <div class="col-lg-10 col-md-9">
-                  <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
-                    porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque
-                    etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam
-                    ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis
-                    parturient fringilla rhoncus eleifend.</p>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Master of Information Technology</div>
+                  <p class="category">University of Computer Science</p>
+                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
+                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
+                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
+                    molestie ultricies sollicitudin dui.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="experience">
-  <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>March 2016 - Present</p>
-            <div class="h5">CreativeM</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Front End Developer</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>April 2014 - March 2016</p>
-            <div class="h5">WebNote</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Web Developer</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>April 2013 - February 2014</p>
-            <div class="h5">WEBM</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Intern</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section">
-  <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Education</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2013 - 2015</p>
-            <div class="h5">Master's Degree</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Master of Information Technology</div>
-            <p class="category">University of Computer Science</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2009 - 2013</p>
-            <div class="h5">Bachelor's Degree</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Bachelor of Computer Science</div>
-            <p class="category">University of Computer Science</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2007 - 2009</p>
-            <div class="h5">High School</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Science and Mathematics</div>
-            <p class="category">School of Secondary board</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="reference">
-  <div class="container cc-reference">
-    <div class="h4 mb-4 text-center title">References</div>
-    <div class="card" data-aos="zoom-in">
-      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-          <li data-target="#cc-Indicators" data-slide-to="1"></li>
-          <li data-target="#cc-Indicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="card">
             <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg" alt="Image"/>
-                <div class="h5 pt-2">Aiyana</div>
-                <p class="category">CEO / WEBM</p>
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
+                  <p>2009 - 2013</p>
+                  <div class="h5">Bachelor's Degree</div>
+                </div>
               </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Bachelor of Computer Science</div>
+                  <p class="category">University of Computer Science</p>
+                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
+                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
+                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
+                    molestie ultricies sollicitudin dui.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="card">
             <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg" alt="Image"/>
-                <div class="h5 pt-2">Braiden</div>
-                <p class="category">CEO / Creativem</p>
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
+                  <p>2007 - 2009</p>
+                  <div class="h5">High School</div>
+                </div>
               </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg" alt="Image"/>
-                <div class="h5 pt-2">Alexander</div>
-                <p class="category">CEO / Webnote</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Science and Mathematics</div>
+                  <p class="category">School of Secondary board</p>
+                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
+                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
+                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
+                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
+                    molestie ultricies sollicitudin dui.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
-    <div class="container">
-      <div class="cc-contact">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="card mb-0" data-aos="zoom-in">
-              <div class="h4 text-center title">Contact Me</div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <form action="https://formspree.io/your@email.com" method="POST">
-                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
-                        </div>
-                      </div>
-                    </form>
+      <div class="section" id="reference">
+        <div class="container cc-reference">
+          <div class="h4 mb-4 text-center title">References</div>
+          <div class="card" data-aos="zoom-in">
+            <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+                <li data-target="#cc-Indicators" data-slide-to="1"></li>
+                <li data-target="#cc-Indicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg"
+                        alt="Image" />
+                      <div class="h5 pt-2">Aiyana</div>
+                      <p class="category">CEO / WEBM</p>
+                    </div>
+                    <div class="col-lg-10 col-md-9">
+                      <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
+                        porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam
+                        luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper,
+                        laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient
+                        fringilla rhoncus eleifend.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <p class="mb-0"><strong>Address </strong></p>
-                    <p class="pb-2">140, City Center, New York, U.S.A</p>
-                    <p class="mb-0"><strong>Phone</strong></p>
-                    <p class="pb-2">+1718-111-0011</p>
-                    <p class="mb-0"><strong>Email</strong></p>
-                    <p>anthony@company.com</p>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg"
+                        alt="Image" />
+                      <div class="h5 pt-2">Braiden</div>
+                      <p class="category">CEO / Creativem</p>
+                    </div>
+                    <div class="col-lg-10 col-md-9">
+                      <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
+                        porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam
+                        luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper,
+                        laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient
+                        fringilla rhoncus eleifend.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg"
+                        alt="Image" />
+                      <div class="h5 pt-2">Alexander</div>
+                      <p class="category">CEO / Webnote</p>
+                    </div>
+                    <div class="col-lg-10 col-md-9">
+                      <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
+                        porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam
+                        luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper,
+                        laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient
+                        fringilla rhoncus eleifend.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -954,62 +1191,67 @@ electrónico, parentesco (cuando aplique).-->
           </div>
         </div>
       </div>
+     
     </div>
   </div>
-</div></div>
+  <footer class="footer">
+    <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x "
+          aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x "
+          aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x"
+          aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x "
+          aria-hidden="true"></i></a></div>
+    <div class="h4 title text-center">Anthony Barnett</div>
+    <div class="text-center text-muted">
+      <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com"
+          target="_blank">TemplateFlip</a></p>
     </div>
-    <footer class="footer">
-      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
-      <div class="h4 title text-center">Anthony Barnett</div>
-      <div class="text-center text-muted">
-        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
-      </div>
-    </footer>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/core/popper.min.js"></script>
-    <script src="js/core/bootstrap.min.js"></script>
-    <script src="js/now-ui-kit.js?v=1.1.0"></script>
-    <script src="js/aos.js"></script>
-    <script src="scripts/main.js"></script>
+  </footer>
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/core/popper.min.js"></script>
+  <script src="js/core/bootstrap.min.js"></script>
+  <script src="js/now-ui-kit.js?v=1.1.0"></script>
+  <script src="js/aos.js"></script>
+  <script src="scripts/main.js"></script>
 
 
 
-      <!-- datatable inicio -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- datatable inicio -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-
-
-    <!--    Datatables-->
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
 
-    <script>
-      //Idiomas con el 1er método   
-      $(document).ready(function () {
-        $('#example').DataTable({
+  <!--    Datatables-->
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
 
-          "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
 
-          //        "columnDefs": [
-          //  { "width": "20%", "targets": 0 }
-          // ],
-          "language": {
-            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json"
-          }
+  <script>
+    //Idiomas con el 1er método   
+    $(document).ready(function () {
+      $('#example').DataTable({
 
-        });
+        "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
+
+        //        "columnDefs": [
+        //  { "width": "20%", "targets": 0 }
+        // ],
+        "language": {
+          "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json"
+        }
+
       });
+    });
 
-    </script>
-    <!-- datatable fin-->
+  </script>
+  <!-- datatable fin-->
 
-  </body>
+</body>
+
 </html>
