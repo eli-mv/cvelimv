@@ -19,7 +19,11 @@
     $.mobile.loading().hide();
   </script>
   <!-- widget inicio -->
+<script>
 
+
+  
+</script>
 
   <!-- Slider-->
 
@@ -325,9 +329,10 @@ electrónico, parentesco (cuando aplique).-->
                             </div>
                             <div class="row mb-3">
                               <div class="col">
-                                <div class="form-group">
-                                  <textarea class="form-control" name="message" placeholder="Your Message"
+                                <div>
+                                  <textarea rows="3" maxlength="100" id="mensaje" class="form-control" name="message" placeholder="Your Message"
                                     required="required"></textarea>
+                                    <div style="text-align: center;" id="contador">0/100</div>
                                 </div>
                               </div>
                             </div>
@@ -719,6 +724,18 @@ electrónico, parentesco (cuando aplique).-->
   </script>
   <!-- datatable fin-->
 
+  <script>
+
+    const mensaje = document.getElementById('mensaje');
+    const contador = document.getElementById('contador');
+    mensaje.addEventListener('input', function(e) {
+        const target = e.target;
+        const longitudMax = target.getAttribute('maxlength');
+        const longitudAct = target.value.length;
+        contador.innerHTML = `${longitudAct}/${longitudMax}`;
+    });
+      
+  </script>
 </body>
 
 </html>

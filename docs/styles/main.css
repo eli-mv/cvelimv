@@ -2901,6 +2901,7 @@ h6, .h6 {
 
 p {
   line-height: 1.61em;
+  text-align: justify; 
 }
 
 .description p, p.description {
