@@ -81,7 +81,7 @@ function insertZoomHTML() {
 		
 	var inImage2 = document.createElement("img");
 	inImage2.onclick = function (event) { zoomOut(this, event); return false; };	
-	inImage2.setAttribute('src',zoomImagesURI+'closebox.png');		
+	inImage2.setAttribute('src','/images/close.png');		
 	inImage2.setAttribute('width','30');
 	inImage2.setAttribute('height','30');
 	inImage2.setAttribute('border','0');
